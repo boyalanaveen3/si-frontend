@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navbar-height: 4.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-slate-900 antialiased;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.2), transparent 50%),
+              radial-gradient(circle at 80% 10%, rgba(14, 165, 233, 0.25), transparent 55%),
+              linear-gradient(180deg, rgba(241, 245, 249, 0.95), rgba(255, 255, 255, 0.9));
+}
+
+.section-padding {
+  @apply px-4 py-20 sm:px-6 lg:px-12 xl:px-24;
+}
+
+.section-title {
+  @apply text-3xl font-bold tracking-tight text-primary sm:text-4xl;
+}
+
+.section-subtitle {
+  @apply mt-2 max-w-2xl text-lg text-slate-600;
+}
+
+.card-hover {
+  @apply transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-xl;
+}
+
+[data-underline]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  background: linear-gradient(90deg, #2563EB 0%, #38BDF8 100%);
+}
+
+[data-underline]:hover::after,
+[data-underline].active::after {
+  transform: scaleX(1);
+}
