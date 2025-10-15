@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/(marketing)/blog/[slug]/page": [
+    "/(marketing)/contact-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/blog/[slug]/page.js"
+      "static/chunks/app/(marketing)/contact-us/page.js"
     ],
     "/(marketing)/layout": [
       "static/chunks/webpack.js",
@@ -15,31 +15,6 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/(marketing)/contact-us/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/contact-us/page.js"
-    ],
-    "/(marketing)/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/blog/page.js"
-    ],
-    "/(marketing)/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/page.js"
-    ],
-    "/(marketing)/our-services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/our-services/page.js"
-    ],
-    "/(marketing)/about-us/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/about-us/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
