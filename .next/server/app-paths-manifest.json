@@ -1,1 +1,6 @@
-{}
+{
+  "/(marketing)/our-services/page": "app/(marketing)/our-services/page.js",
+  "/(marketing)/about-us/page": "app/(marketing)/about-us/page.js",
+  "/(marketing)/contact-us/page": "app/(marketing)/contact-us/page.js",
+  "/(marketing)/page": "app/(marketing)/page.js"
+}
