@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -11,9 +10,9 @@ interface BlogDetailPageProps {
   };
 }
 
-export async function generateMetadata({ params }: BlogDetailPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: BlogDetailPageProps) {
   const blog = await getBlogBySlug(params.slug);
-
+  
   if (!blog?.data) {
     return {
       title: 'Blog Post Not Found'
@@ -23,9 +22,8 @@ export async function generateMetadata({ params }: BlogDetailPageProps): Promise
   return {
     title: `${blog.data.title} | Visionary Hub Blog`,
     description: blog.data.summary,
-    alternates: {
-      canonical: `https://sriadds.com/blog/${params.slug}`
-    }
+    image:blog.data.image
+   
   };
 }
 
@@ -46,7 +44,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
   }
 
   const { data } = blog;
-
+console.log(data)
   return (
     <>
       <article className="section-padding bg-white">
@@ -81,7 +79,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
             <Reveal delay={0.3}>
               <div className="relative aspect-video w-full overflow-hidden rounded-3xl">
                 <Image
-                  src={`https://images.unsplash.com/photo-${Math.floor(Math.random() * 1000)}?auto=format&fit=crop&w=1200&q=80`}
+                  src={data.image || 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80'}
                   alt={data.title}
                   fill
                   className="object-cover"

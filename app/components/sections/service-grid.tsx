@@ -1,9 +1,10 @@
 "use client";
 
+import { useOurServicesStore } from '../../store/ourservicestore';
 import { Reveal } from '../animations/reveal';
-import { servicesDefaults } from '../../data/static-content';
 
 export function ServiceGrid() {
+  const {productsdata} = useOurServicesStore()
   return (
     <section className="section-padding bg-white">
       <div className="mx-auto w-full max-w-6xl">
@@ -17,12 +18,12 @@ export function ServiceGrid() {
         </Reveal>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {servicesDefaults.map((service, index) => (
+          {productsdata?.map((service, index) => (
             <Reveal key={service.id} delay={index * 0.05}>
               <div className="card-hover h-full rounded-3xl border border-slate-200 bg-white p-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-2xl">
-                  {service.icon}
-                </div>
+                {service?.icon && 
+                  <img src={service?.icon} className='flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-2xl'  />
+                }
                 <h3 className="mt-6 text-lg font-semibold text-primary">{service.title}</h3>
                 <p className="mt-3 text-sm text-slate-600">{service.description}</p>
               </div>

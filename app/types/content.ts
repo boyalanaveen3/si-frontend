@@ -31,7 +31,7 @@ export interface BlogSummary {
   summary: string;
   author: string;
   createdAt: string;
-  thumbnail: string;
+  image: string;
 }
 
 export interface HeroContent {
@@ -103,6 +103,7 @@ export interface BlogDetail {
     author: string;
     published: boolean;
     bid: string;
+    image:string;
     createdAt: string;
     updatedAt: string;
   };

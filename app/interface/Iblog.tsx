@@ -39,6 +39,7 @@ export interface CreateBlogPayload {
     bid?: string;           
     createdAt: string;
     updatedAt: string;
+    image:string
     __v: number;
   }
   export interface UpdateBlogPayload {

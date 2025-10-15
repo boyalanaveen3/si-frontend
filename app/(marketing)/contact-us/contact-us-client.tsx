@@ -1,51 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect } from 'react';
 import { Reveal } from '../../components/animations/reveal';
 import { CtaBanner } from '../../components/sections/cta-banner';
 import { CustomerForm } from '../../components/forms/customer-form';
-import { useContactusStore } from '../../store/contactusstore';
+import { contactDefaults } from '../../data/static-content';
 
 export function ContactUsClient() {
-  const { fetchContactInfo, contactInfo, loading, error } = useContactusStore();
-  
-  useEffect(() => {
-    fetchContactInfo();
-  }, [fetchContactInfo]);
-
-  if (loading) {
-    return (
-      <div className="section-padding hero-gradient">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-center">
-          <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
-            <p className="mt-4 text-slate-600">Loading contact information...</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (error || !contactInfo) {
-    return (
-      <div className="section-padding hero-gradient">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-center">
-          <div className="text-center">
-            <p className="text-red-600">Failed to load contact information</p>
-            <button 
-              onClick={fetchContactInfo}
-              className="mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-slate-900"
-            >
-              Retry
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  const contact = contactInfo;
+  const contact = contactDefaults;
 
   return (
     <>
@@ -135,7 +97,7 @@ export function ContactUsClient() {
                 <p className="mt-2 text-sm text-slate-600">{contact.address}</p>
                 <div className="mt-4 overflow-hidden rounded-2xl border border-slate-100 shadow-sm">
                   <iframe
-                    src={contact.mapEmbedUrl}
+                    src={contactDefaults.mapEmbedUrl}
                     title="Visionary Hub office location"
                     className="h-64 w-full"
                     loading="lazy"

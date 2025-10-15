@@ -68,21 +68,21 @@ export const servicesDefaults: Service[] = [
 export const testimonialsDefaults: Testimonial[] = [
   {
     id: 1,
-    name: 'Priya Desai',
+    name: 'Prince ',
     role: 'CMO, Lumina Tech',
     statement:
       'Visionary Hub elevated our digital footprint within 8 weeks. We saw a 140% uplift in qualified leads and a refreshed brand narrative.'
   },
   {
     id: 2,
-    name: 'Arjun Mehta',
+    name: 'Pradeep',
     role: 'Founder, Apex Logistics',
     statement:
       'Their design direction and performance marketing support helped us launch a new product line with remarkable adoption.'
   },
   {
     id: 3,
-    name: 'Sana Kapoor',
+    name: 'Poorna ',
     role: 'Director, Nova Clinics',
     statement:
       'From strategy workshops to execution, the team delivered an experience that made our patients trust us before they ever visited.'
@@ -184,7 +184,7 @@ export const blogDefaults: BlogSummary[] = [
     summary: 'Create high-converting web experiences by aligning motion, UX flows, and storytelling.',
     author: 'Visionary Hub Team',
     createdAt: new Date().toISOString(),
-    thumbnail: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80'
   },
   {
     _id: 'blog_002',
@@ -193,7 +193,7 @@ export const blogDefaults: BlogSummary[] = [
     summary: 'Build experimentation loops and analytics foundations for compounding ROI.',
     author: 'Visionary Hub Team',
     createdAt: new Date().toISOString(),
-    thumbnail: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80'
   },
   {
     _id: 'blog_003',
@@ -202,7 +202,7 @@ export const blogDefaults: BlogSummary[] = [
     summary: 'Why flexible brand systems help startups stay consistent across campaigns and products.',
     author: 'Visionary Hub Team',
     createdAt: new Date().toISOString(),
-    thumbnail: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80'
   }
 ];
 

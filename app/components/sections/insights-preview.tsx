@@ -28,7 +28,7 @@ export function InsightsPreview() {
             <Reveal key={blog._id} delay={index * 0.08}>
               <article className="card-hover flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white">
                 <div className="relative h-48 w-full">
-                  <Image src={blog.thumbnail} alt={blog.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+                  <img src={blog.image} alt={blog.title} className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <span className="text-xs font-semibold uppercase tracking-wide text-primary">{blog.author}</span>

@@ -1,13 +1,6 @@
 import { create } from 'zustand';
 import axiosInstance from '../utils/axios';
 
-interface ContactInfo {
-  phone: string;
-  email: string;
-  address: string;
-  mapEmbedUrl: string;
-}
-
 interface ContactFormData {
   name: string;
   email: string;
@@ -16,40 +9,17 @@ interface ContactFormData {
 }
 
 interface ContactState {
-  contactInfo: ContactInfo | null;
-  loading: boolean;
-  error: string | null;
   submitting: boolean;
   submitSuccess: string | null;
   submitError: string | null;
-  fetchContactInfo: () => Promise<void>;
   submitContactForm: (formData: ContactFormData) => Promise<{ status: boolean; data?: any; error?: string }>;
   clearSubmitStatus: () => void;
 }
 
 export const useContactusStore = create<ContactState>((set, get) => ({
-  contactInfo: null,
-  loading: false,
-  error: null,
   submitting: false,
   submitSuccess: null,
   submitError: null,
-  fetchContactInfo: async () => {
-    set({ loading: true, error: null });
-    try {
-      const result = await axiosInstance.get('/contacts');
-      if (result?.data?.status === 200 && result.data?.data) {
-        set({ contactInfo: result.data.data, loading: false });
-      } else {
-        set({ error: result.data?.message || 'Failed to load contact information', loading: false });
-      }
-    } catch (error: any) {
-      set({ 
-        error: error?.response?.data?.message || 'Failed to load contact information', 
-        loading: false 
-      });
-    }
-  },
   submitContactForm: async (formData: ContactFormData) => {
     set({ submitting: true, submitError: null, submitSuccess: null });
     try {

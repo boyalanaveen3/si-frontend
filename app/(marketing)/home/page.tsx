@@ -1,4 +1,5 @@
-import { Metadata } from 'next';
+'use client';
+
 import { Hero } from '../../components/hero/hero';
 import { Reveal } from '../../components/animations/reveal';
 import { ServiceGrid } from '../../components/sections/service-grid';
@@ -8,20 +9,26 @@ import { Approach } from '../../components/sections/approach';
 import { CtaBanner } from '../../components/sections/cta-banner';
 import { getPageBySlug, getBlogs } from '../../lib/api';
 import { HomeStoreHydrator } from '../../components/providers/page-store-hydrators';
+import { useOurServicesStore } from '../../store/ourservicestore';
+import { useEffect, useState } from 'react';
 
-export const metadata: Metadata = {
-  title: 'Digital Marketing & Web Design Agency',
-  description:
-    'Visionary Hub delivers digital marketing, web design, and growth strategies that scale modern brands.',
-  alternates: {
-    canonical: 'https://sriadds.com/'
-  }
-};
+export default function HomePage() {
+  const { fetchProducts } = useOurServicesStore();
+  const [page, setPage] = useState<any>(null);
+  const [blogs, setBlogs] = useState<any>([]);
 
-export default async function HomePage() {
-  const page = await getPageBySlug('home');
-  const blogsResponse = await getBlogs();
-  const blogs = blogsResponse?.data ?? [];
+  useEffect(() => {
+    fetchProducts();
+    
+    const fetchData = async () => {
+      const pageData = await getPageBySlug('home');
+      const blogsResponse = await getBlogs();
+      setPage(pageData as any);
+      setBlogs(blogsResponse?.data ?? []);
+    };
+    
+    fetchData();
+  }, [fetchProducts]);
 
   return (
     <>

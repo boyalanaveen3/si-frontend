@@ -7,7 +7,7 @@ const nextConfig = {
     }
   },
   images: {
-    domains: ['images.unsplash.com', 'source.unsplash.com']
+    domains: ['images.unsplash.com', 'source.unsplash.com', 'www.cloudways.com']
   }
 };
 

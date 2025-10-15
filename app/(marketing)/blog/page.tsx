@@ -8,10 +8,9 @@ import {useBlogStore} from "../../store/blogstore"
 import { useEffect } from 'react';
 
 
-export default async function BlogPage() {
+export default  function BlogPage() {
   const {fetchBlogData,blogs}=useBlogStore()
-  const blogsResponse = await getBlogs();
-  // const blogs = blogsResponse?.data ?? blogDefaults;
+  const blogsResponse =  getBlogs();
   useEffect(() => { 
     fetchBlogData();
   },[])
@@ -42,10 +41,9 @@ export default async function BlogPage() {
                   <Reveal key={blog._id} delay={index * 0.05}>
                     <article className="card-hover flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white">
                       <div className="relative h-48 w-full">
-                        <Image
-                          src={`https://images.unsplash.com/photo-${Math.floor(Math.random() * 1000)}?auto=format&fit=crop&w=800&q=80`}
+                        <img
+                          src={blog?.image}
                           alt={blog.title}
-                          fill
                           className="object-cover"
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />

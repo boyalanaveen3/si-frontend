@@ -1,39 +1,38 @@
 'use client';
 
 import { Reveal } from '../../components/animations/reveal';
-import { serviceIntroDefaults, processDefaults, faqDefaults } from '../../data/static-content';
+import { faqDefaults } from '../../data/static-content';
 import { Process } from '../../components/sections/process';
 import { CtaBanner } from '../../components/sections/cta-banner';
 import {useOurServicesStore} from "../../store/ourservicestore"
 import { useEffect } from 'react';
 
-
 export default function OurServicesPage() {
-  const serviceIntro = serviceIntroDefaults;
-   const { fetchPage } = useOurServicesStore();
+  const { productsdata,fetchProducts } = useOurServicesStore();
+  console.log(productsdata,"productsdata")
     
-    useEffect(() => {
-      fetchPage();
-    }, []);
- 
+  useEffect(() => {
+    fetchProducts();
+  }, [fetchProducts]);
+
   return (
     <>
       <section className="section-padding hero-gradient">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 lg:flex-row lg:items-center">
-          <div className="max-w-xl space-y-6">
+          {/* <div className="max-w-xl space-y-6">
             <Reveal>
               <h1 className="text-4xl font-bold text-primary sm:text-5xl lg:text-6xl">
-                {serviceIntro.title}
+                {displayData.title}
               </h1>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="text-lg text-slate-600">
-                {serviceIntro.description}
+                {displayData.description}
               </p>
             </Reveal>
             <Reveal delay={0.2}>
               <div className="flex flex-wrap gap-3 text-sm text-slate-500">
-                {serviceIntro.highlights.map((highlight, idx) => (
+                {displayData.highlights?.map((highlight, idx) => (
                   <span
                     key={`${highlight}-${idx}`}
                     className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 shadow-sm"
@@ -44,7 +43,7 @@ export default function OurServicesPage() {
                 ))}
               </div>
             </Reveal>
-          </div>
+          </div> */}
 
           <div className="flex-1 space-y-6">
             <Reveal direction="left">
@@ -86,64 +85,17 @@ export default function OurServicesPage() {
           </Reveal>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                id: 1,
-                title: 'Digital Marketing',
-                description: 'Multi-channel campaigns driving qualified leads and brand awareness.',
-                icon: '📈',
-                features: ['PPC & SEO', 'Content strategy', 'Social media']
-              },
-              {
-                id: 2,
-                title: 'Web Designing',
-                description: 'Custom websites built for performance, accessibility, and conversion.',
-                icon: '💻',
-                features: ['Responsive design', 'UX optimization', 'Fast loading']
-              },
-              {
-                id: 3,
-                title: 'SEO',
-                description: 'Technical and content SEO to improve rankings and organic traffic.',
-                icon: '🔍',
-                features: ['Keyword research', 'Technical audits', 'Link building']
-              },
-              {
-                id: 4,
-                title: 'UI/UX Designing',
-                description: 'User-centered design that balances aesthetics with functionality.',
-                icon: '🎨',
-                features: ['User research', 'Prototyping', 'Usability testing']
-              },
-              {
-                id: 5,
-                title: 'WhatsApp Marketing',
-                description: 'Conversational marketing through personalized WhatsApp campaigns.',
-                icon: '💬',
-                features: ['Automation', 'Personalization', 'CRM integration']
-              },
-              {
-                id: 6,
-                title: 'Logo Designing',
-                description: 'Memorable brand identities that stand out in competitive markets.',
-                icon: '🖌️',
-                features: ['Brand strategy', 'Multiple concepts', 'Full brand kit']
-              },
-              {
-                id: 7,
-                title: 'SMM',
-                description: 'Strategic social media management for engagement and growth.',
-                icon: '📱',
-                features: ['Content calendar', 'Community management', 'Analytics']
-              }
-            ].map((service, index) => (
-              <Reveal key={service.id} delay={index * 0.05}>
+            {productsdata?.map((service, index) => (
+              <Reveal key={index} delay={index * 0.05}>
                 <div className="card-hover h-full rounded-3xl border border-slate-200 bg-white p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-2xl">
-                    {service.icon}
-                  </div>
+                  {service?.icon &&
+                    // <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-2xl">
+                      <img src={service?.icon} className='flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-2xl'  />
+                    // </div>
+                  }
                   <h3 className="mt-6 text-lg font-semibold text-primary">{service.title}</h3>
                   <p className="mt-3 text-sm text-slate-600">{service.description}</p>
+                  {service?.features && service?.features?.length > 0 && (
                   <ul className="mt-4 space-y-1 text-sm text-slate-500">
                     {service.features.map((feature) => (
                       <li key={feature} className="flex items-center gap-2">
@@ -152,6 +104,7 @@ export default function OurServicesPage() {
                       </li>
                     ))}
                   </ul>
+                  )}
                 </div>
               </Reveal>
             ))}
