@@ -24,7 +24,7 @@ export function Hero() {
         <div className="max-w-2xl space-y-6">
           <Reveal>
             <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-              Visionary Hub Consultancy
+              NP Hub
             </span>
           </Reveal>
           <Reveal delay={0.1}>

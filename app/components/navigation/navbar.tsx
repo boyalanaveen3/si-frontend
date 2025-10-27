@@ -30,9 +30,9 @@ export function Navbar() {
       <nav className="mx-auto flex h-[var(--navbar-height)] w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <span className="rounded-full bg-primary px-3 py-1 text-sm font-semibold uppercase tracking-wide text-white">
-            VH
+            NP
           </span>
-          <span className="text-lg font-semibold text-primary">Visionary Hub</span>
+          <span className="text-lg font-semibold text-primary">NP Hub</span>
         </Link>
 
         <div className="hidden items-center gap-10 md:flex">

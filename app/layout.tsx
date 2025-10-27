@@ -16,29 +16,29 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sriadds.com'),
+  // metadataBase: new URL('https://sriadds.com'),
   title: {
-    default: 'Visionary Hub Consultancy',
-    template: '%s | Visionary Hub'
+    default: 'NP Hub',
+    template: '%s | NP Hub'
   },
   description:
-    'Visionary Hub is a digital marketing and web design consultancy delivering growth-focused solutions with modern experiences.',
+    'NP Hub is a digital marketing and web design consultancy delivering growth-focused solutions with modern experiences.',
   icons: {
     icon: '/favicon.ico'
   },
   openGraph: {
-    title: 'Visionary Hub Consultancy',
+    title: 'NP Hub',
     description:
       'Digital marketing and web design consultancy with modern, conversion-driven experiences.',
     url: 'https://sriadds.com',
-    siteName: 'Visionary Hub',
+    siteName: 'NP Hub',
     locale: 'en_US',
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@visionaryhub',
-    creator: '@visionaryhub'
+    site: '@nphub',
+    creator: '@nphub'
   }
 };
 
