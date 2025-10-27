@@ -24,9 +24,9 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2">
               <span className="rounded-full bg-primary px-3 py-1 text-sm font-semibold uppercase tracking-wide text-white">
-                VH
+                NP
               </span>
-              <span className="text-lg font-semibold text-primary">Visionary Hub</span>
+              <span className="text-lg font-semibold text-primary">NP Hub</span>
             </div>
             <p className="mt-5 max-w-sm text-sm text-slate-600">
               We empower ambitious brands with performance-driven digital marketing and immersive web experiences.
