@@ -16,25 +16,15 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(marketing)/our-services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/our-services/page.js"
-    ],
-    "/(marketing)/about-us/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/about-us/page.js"
-    ],
     "/(marketing)/contact-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(marketing)/contact-us/page.js"
     ],
-    "/(marketing)/blog/page": [
+    "/(marketing)/about-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(marketing)/blog/page.js"
+      "static/chunks/app/(marketing)/about-us/page.js"
     ]
   }
 }

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -29,9 +30,14 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
       <nav className="mx-auto flex h-[var(--navbar-height)] w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <span className="rounded-full bg-primary px-3 py-1 text-sm font-semibold uppercase tracking-wide text-white">
-            NP
-          </span>
+          <Image
+            src="/logo-np.svg"
+            alt="NP Hub logo"
+            width={40}
+            height={40}
+            className="h-10 w-10"
+            priority
+          />
           <span className="text-lg font-semibold text-primary">NP Hub</span>
         </Link>
 

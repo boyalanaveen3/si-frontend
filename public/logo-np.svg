@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">NP Hub Logo</title>
+  <desc id="desc">Faithful vector recreation of the supplied NP HUB logo with open circular stroke, bold NP, and HUB wordmark.</desc>
+  <g stroke="#0f4c5c" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M110 196a146 146 0 0 1 292 0" />
+    <path d="M430 232a146 146 0 0 1-246 140" />
+  </g>
+  <text
+    x="256"
+    y="292"
+    text-anchor="middle"
+    font-family="'Poppins','Montserrat','Helvetica Neue',Arial,sans-serif"
+    font-size="220"
+    font-weight="700"
+    letter-spacing="-6"
+    fill="#0f4c5c"
+  >NP</text>
+  <text
+    x="256"
+    y="368"
+    text-anchor="middle"
+    font-family="'Poppins','Montserrat','Helvetica Neue',Arial,sans-serif"
+    font-size="96"
+    font-weight="700"
+    letter-spacing="20"
+    fill="#0f4c5c"
+  >HUB</text>
+</svg>

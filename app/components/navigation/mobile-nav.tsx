@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { HiOutlineX } from 'react-icons/hi';
@@ -50,7 +51,10 @@ export function MobileNav({ links, isOpen, onClose }: MobileNavProps) {
         onClick={(event) => event.stopPropagation()}
       >
         <div className="flex items-center justify-between">
-          <span className="text-lg font-semibold text-primary">Visionary Hub</span>
+          <div className="flex items-center gap-2">
+            <Image src="/logo-np.svg" alt="NP Hub logo" width={36} height={36} className="h-9 w-9" />
+            <span className="text-lg font-semibold text-primary">NP Hub</span>
+          </div>
           <button
             aria-label="Close navigation"
             className="rounded-full border border-slate-200 p-2 text-slate-600 transition hover:text-primary"
