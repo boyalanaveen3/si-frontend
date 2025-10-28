@@ -21,6 +21,7 @@ export interface TeamMember {
   social: {
     linkedin?: string;
     twitter?: string;
+    whatsapp?: string;
   };
 }
 

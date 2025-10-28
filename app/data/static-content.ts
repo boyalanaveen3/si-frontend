@@ -98,7 +98,7 @@ export const teamDefaults: TeamMember[] = [
     bio: 'Brand strategist with 12+ years crafting digital growth programs for high-velocity startups.',
     social: {
       linkedin: 'https://www.linkedin.com/',
-      twitter: 'https://twitter.com/'
+      whatsapp: '9938629736'
     }
   },
   {
@@ -108,7 +108,7 @@ export const teamDefaults: TeamMember[] = [
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=640&q=80',
     bio: 'Designs product ecosystems that blend motion, usability, and narrative for web-first brands.',
     social: {
-      linkedin: 'https://www.linkedin.com/'
+      linkedin: 'https://www.linkedin.com/in/surendra-jannu-03bb2a242/'
     }
   },
   {
@@ -118,7 +118,8 @@ export const teamDefaults: TeamMember[] = [
     avatar: '',
     bio: 'Runs integrated campaigns, turning data into growth loops for commerce and B2B companies.',
     social: {
-      linkedin: 'https://www.linkedin.com/'
+      linkedin: 'https://www.linkedin.com/',
+      whatsapp: '9100129823'
     }
   }
 ];
@@ -159,8 +160,8 @@ export const valuesDefaults: CoreValue[] = [
 ];
 
 export const contactDefaults: ContactInfo = {
-  phone: '+91 9100129823',
-  email: 'visionaryhub@gmail.com',
+  phone: '+91 9493889736, 9100129823',
+  email: 'nphub@33gmail.com',
   address: '1st Floor, Innovate Towers, Maddilapalem, Visakhapatnam, Andhra Pradesh, India',
   mapEmbedUrl:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.8401195597456!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670e7db4f13%3A0x37b3df8b1c0a7d1c!2sMG%20Road%2C%20Bengaluru!5e0!3m2!1sen!2sin!4v1694092800000!5m2!1sen!2sin'
@@ -182,7 +183,7 @@ export const blogDefaults: BlogSummary[] = [
     title: 'Designing Web Experiences that Convert',
     slug: 'designing-web-experiences',
     summary: 'Create high-converting web experiences by aligning motion, UX flows, and storytelling.',
-    author: 'Visionary Hub Team',
+    author: 'Np Hub Team',
     createdAt: new Date().toISOString(),
     image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80'
   },
@@ -191,7 +192,7 @@ export const blogDefaults: BlogSummary[] = [
     title: 'Scaling Performance Marketing with Data',
     slug: 'scaling-performance-marketing',
     summary: 'Build experimentation loops and analytics foundations for compounding ROI.',
-    author: 'Visionary Hub Team',
+    author: 'Np Hub Team',
     createdAt: new Date().toISOString(),
     image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80'
   },
@@ -200,7 +201,7 @@ export const blogDefaults: BlogSummary[] = [
     title: 'Brand Systems for Ambitious Startups',
     slug: 'brand-systems-for-startups',
     summary: 'Why flexible brand systems help startups stay consistent across campaigns and products.',
-    author: 'Visionary Hub Team',
+    author: 'Np Hub Team',
     createdAt: new Date().toISOString(),
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80'
   }
@@ -248,6 +249,6 @@ export const faqDefaults: FaqItem[] = [
 export const serviceIntroDefaults = {
   title: 'Full-stack digital marketing & web design services built to scale with you',
   description:
-    'Visionary Hub delivers a cohesive ecosystem—from positioning and UI systems to acquisition, retention, and analytics.',
+    'Np Hub delivers a cohesive ecosystem—from positioning and UI systems to acquisition, retention, and analytics.',
   highlights: ['Cross-functional delivery teams', 'Experimentation-first mindset', 'Motion and performance baked in']
 };
