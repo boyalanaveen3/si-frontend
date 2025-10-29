@@ -20,50 +20,50 @@ export const metricsDefaults: MetricsHighlight[] = [
   { id: 3, label: 'Retention Rate', value: '92%' }
 ];
 
-export const servicesDefaults: Service[] = [
-  {
-    id: 1,
-    title: 'Digital Marketing',
-    description: 'Comprehensive digital marketing strategies to grow your business online.',
-    icon: '📈'
-  },
-  {
-    id: 2,
-    title: 'Web Designing',
-    description: 'Modern, responsive, and user-friendly web design services.',
-    icon: '💻'
-  },
-  {
-    id: 3,
-    title: 'SEO',
-    description: 'Enhance visibility and boost ranking with our SEO expertise.',
-    icon: '🔍'
-  },
-  {
-    id: 4,
-    title: 'UI/UX Designing',
-    description: 'Design engaging and intuitive user experiences.',
-    icon: '🎨'
-  },
-  {
-    id: 5,
-    title: 'WhatsApp Marketing',
-    description: 'Reach customers directly with customized WhatsApp campaigns.',
-    icon: '💬'
-  },
-  {
-    id: 6,
-    title: 'Logo Designing',
-    description: 'Unique and memorable logos tailored for your brand.',
-    icon: '🖌️'
-  },
-  {
-    id: 7,
-    title: 'SMM',
-    description: 'Effective social media management for brand growth.',
-    icon: '📱'
-  }
-];
+// export const servicesDefaults: Service[] = [
+//   {
+//     id: 1,
+//     title: 'Digital Marketing',
+//     description: 'Comprehensive digital marketing strategies to grow your business online.',
+//     icon: '📈'
+//   },
+//   {
+//     id: 2,
+//     title: 'Web Designing',
+//     description: 'Modern, responsive, and user-friendly web design services.',
+//     icon: '💻'
+//   },
+//   {
+//     id: 3,
+//     title: 'SEO',
+//     description: 'Enhance visibility and boost ranking with our SEO expertise.',
+//     icon: '🔍'
+//   },
+//   {
+//     id: 4,
+//     title: 'UI/UX Designing',
+//     description: 'Design engaging and intuitive user experiences.',
+//     icon: '🎨'
+//   },
+//   {
+//     id: 5,
+//     title: 'WhatsApp Marketing',
+//     description: 'Reach customers directly with customized WhatsApp campaigns.',
+//     icon: '💬'
+//   },
+//   {
+//     id: 6,
+//     title: 'Logo Designing',
+//     description: 'Unique and memorable logos tailored for your brand.',
+//     icon: '🖌️'
+//   },
+//   {
+//     id: 7,
+//     title: 'SMM',
+//     description: 'Effective social media management for brand growth.',
+//     icon: '📱'
+//   }
+// ];
 
 export const testimonialsDefaults: Testimonial[] = [
   {
@@ -115,10 +115,11 @@ export const teamDefaults: TeamMember[] = [
     id: 3,
     name: 'Naveen boyala',
     role: 'CEO&Manager',
-    avatar: '',
+    avatar:
+      'https://drive.google.com/uc?export=view&id=1mj2Vv61TurgJGO6Npr3dEon8qme6s7zQ',
     bio: 'Runs integrated campaigns, turning data into growth loops for commerce and B2B companies.',
     social: {
-      linkedin: 'https://www.linkedin.com/',
+      linkedin: 'https://www.linkedin.com/in/naveen-boyala-a96a29226?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWu1E7bdVTiC%2BhkN2exQOog%3D%3D://www.linkedin.com/',
       whatsapp: '9100129823'
     }
   }
@@ -164,7 +165,7 @@ export const contactDefaults: ContactInfo = {
   email: 'nphub@33gmail.com',
   address: '1st Floor, Innovate Towers, Maddilapalem, Visakhapatnam, Andhra Pradesh, India',
   mapEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.8401195597456!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670e7db4f13%3A0x37b3df8b1c0a7d1c!2sMG%20Road%2C%20Bengaluru!5e0!3m2!1sen!2sin!4v1694092800000!5m2!1sen!2sin'
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.570905972839!2d83.31663077491918!3d17.738165283992405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943f6e0e39bef%3A0x29263db345ccfb52!2sPitapuram%20Colony%2C%20Maddilapalem%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1709271140000!5m2!1sen!2sin'
 };
 
 export const ctaDefaults: CtaBanner = {

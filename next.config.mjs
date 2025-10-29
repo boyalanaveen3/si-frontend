@@ -7,7 +7,13 @@ const nextConfig = {
     }
   },
   images: {
-    domains: ['images.unsplash.com', 'source.unsplash.com', 'www.cloudways.com']
+    domains: [
+      'images.unsplash.com',
+      'source.unsplash.com',
+      'www.cloudways.com',
+      'drive.google.com',
+      'drive.googleusercontent.com'
+    ]
   }
 };
 
