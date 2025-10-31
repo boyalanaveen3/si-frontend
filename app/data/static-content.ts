@@ -101,16 +101,16 @@ export const teamDefaults: TeamMember[] = [
       whatsapp: '9938629736'
     }
   },
-  {
-    id: 2,
-    name: 'surendra jannu',
-    role: 'manager',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=640&q=80',
-    bio: 'Designs product ecosystems that blend motion, usability, and narrative for web-first brands.',
-    social: {
-      linkedin: 'https://www.linkedin.com/in/surendra-jannu-03bb2a242/'
-    }
-  },
+  // {
+  //   id: 2,
+  //   name: 'surendra jannu',
+  //   role: 'manager',
+  //   avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=640&q=80',
+  //   bio: 'Designs product ecosystems that blend motion, usability, and narrative for web-first brands.',
+  //   social: {
+  //     linkedin: 'https://www.linkedin.com/in/surendra-jannu-03bb2a242/'
+  //   }
+  // },
   {
     id: 3,
     name: 'Naveen boyala',
