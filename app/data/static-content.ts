@@ -71,18 +71,18 @@ export const testimonialsDefaults: Testimonial[] = [
     name: 'Prince ',
     role: 'CMO, Lumina Tech',
     statement:
-      'Visionary Hub elevated our digital footprint within 8 weeks. We saw a 140% uplift in qualified leads and a refreshed brand narrative.'
+      'NP Hub elevated our digital footprint within 8 weeks. We saw a 140% uplift in qualified leads and a refreshed brand narrative.'
   },
   {
     id: 2,
-    name: 'Pradeep',
+    name: 'Pradeep chandu',
     role: 'Founder, Apex Logistics',
     statement:
       'Their design direction and performance marketing support helped us launch a new product line with remarkable adoption.'
   },
   {
     id: 3,
-    name: 'Poorna ',
+    name: 'Raju bevara',
     role: 'Director, Nova Clinics',
     statement:
       'From strategy workshops to execution, the team delivered an experience that made our patients trust us before they ever visited.'
@@ -94,7 +94,7 @@ export const teamDefaults: TeamMember[] = [
     id: 1,
     name: 'Prasanth kumar',
     role: 'Marketing Head',
-    avatar: 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=640&q=80',
+    avatar: 'https://drive.google.com/uc?export=view&id=1whI72qrUCuh62-QqDEUwQ20RRdu9u8SI',
     bio: 'Brand strategist with 12+ years crafting digital growth programs for high-velocity startups.',
     social: {
       linkedin: 'https://www.linkedin.com/',
@@ -114,10 +114,10 @@ export const teamDefaults: TeamMember[] = [
   {
     id: 3,
     name: 'Naveen boyala',
-    role: 'CEO&Manager',
+    role: 'CEO & Manager',
     avatar:
-      'https://drive.google.com/uc?export=view&id=1mj2Vv61TurgJGO6Npr3dEon8qme6s7zQ',
-    bio: 'Runs integrated campaigns, turning data into growth loops for commerce and B2B companies.',
+      'https://drive.google.com/uc?export=view&id=1eG8SKSb37Lzebi_ja45UUuRsGE51wK5O ',
+    bio: 'Building scalable tech ecosystems that turn ideas into impact',
     social: {
       linkedin: 'https://www.linkedin.com/in/naveen-boyala-a96a29226?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWu1E7bdVTiC%2BhkN2exQOog%3D%3D://www.linkedin.com/',
       whatsapp: '9100129823'

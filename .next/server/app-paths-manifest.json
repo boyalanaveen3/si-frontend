@@ -1,5 +1,7 @@
 {
-  "/(marketing)/contact-us/page": "app/(marketing)/contact-us/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(marketing)/about-us/page": "app/(marketing)/about-us/page.js",
+  "/(marketing)/blog/page": "app/(marketing)/blog/page.js",
   "/(marketing)/page": "app/(marketing)/page.js",
-  "/(marketing)/about-us/page": "app/(marketing)/about-us/page.js"
+  "/(marketing)/our-services/page": "app/(marketing)/our-services/page.js"
 }
