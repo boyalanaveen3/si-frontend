@@ -4,10 +4,6 @@ export  interface IContactus{
     fetchcontactus:()=>Promise<IResponse<ContactForm>>
 }
 
-
-
-
-
 interface IObj {
     [key: string]: any;
   }

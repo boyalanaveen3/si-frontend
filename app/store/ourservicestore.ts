@@ -20,6 +20,9 @@ export const useOurServicesStore = create<Iproducts>((set) => ({
     } catch (error) {
       console.error('Failed to fetch products:', error);
     }
+  },
+  setData: (data) => {
+    set({ productsdata: data });
   }
 }));
 

@@ -2,6 +2,7 @@
 export  interface Iproducts{
     productsdata: Product[] | null
     fetchProducts: () => Promise<void>
+    setData: (data: any) => void
 }
 export interface Product {
   id: string;
