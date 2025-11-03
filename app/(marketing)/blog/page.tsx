@@ -3,14 +3,14 @@
 import Link from 'next/link';
 import { Reveal } from '../../components/animations/reveal';
 import { useBlogStore } from "../../store/blogstore"
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 export default function BlogPage() {
   const { fetchBlogData, blogs } = useBlogStore();
   
-  useEffect(() => { 
-    fetchBlogData();
-  }, [fetchBlogData]);
+  // useEffect(() => { 
+    // fetchBlogData();
+  // }, [fetchBlogData]);
 
   return (
     <>
