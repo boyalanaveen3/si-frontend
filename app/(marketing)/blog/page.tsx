@@ -1,19 +1,16 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { Reveal } from '../../components/animations/reveal';
-import { getBlogs } from '../../lib/api';
-import {useBlogStore} from "../../store/blogstore"
+import { useBlogStore } from "../../store/blogstore"
 import { useEffect } from 'react';
 
-
-export default  function BlogPage() {
-  const {fetchBlogData,blogs}=useBlogStore()
-  const blogsResponse =  getBlogs();
+export default function BlogPage() {
+  const { fetchBlogData, blogs } = useBlogStore();
+  
   useEffect(() => { 
     fetchBlogData();
-  },[])
+  }, [fetchBlogData]);
 
   return (
     <>
