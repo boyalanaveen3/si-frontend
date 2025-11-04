@@ -24,7 +24,7 @@ export const useAboutUsStore = create<AboutUsState>((set) => ({
     set({ loading: true, error: null });
 
     try {
-      const response = await axiosInstance(process.env.NEXT_PUBLIC_API_SERVICE+'/pages/about');
+      const response = await axiosInstance.get('/pages/about');
 
       if (!response || response.status !== 200) {
         set({ loading: false, error: 'Unable to load About Us content.' });

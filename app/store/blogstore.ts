@@ -18,7 +18,7 @@ export const useBlogStore = create<IBlog>((set) => ({
     })),
   fetchBlogData: async () => {
     try {
-      const result = await axiosInstance.get(process.env.NEXT_PUBLIC_API_SERVICE+'/blogs');
+      const result = await axiosInstance.get('/blogs');
       if (result?.data?.status === 200 && result.data?.data) {
         set({ blogs: result.data.data });
         return { status: true, data: result.data.data };
@@ -32,7 +32,7 @@ export const useBlogStore = create<IBlog>((set) => ({
   },
   createBlog: async (payload: CreateBlogPayload) => {
     try {
-      const result = await axiosInstance.post(process.env.NEXT_PUBLIC_API_SERVICE+'/blogs/create', payload);
+      const result = await axiosInstance.post('/blogs/create', payload);
       if ([200, 201].includes(result?.data?.status) && result.data?.data) {
         set((state) => ({ blogs: [...state.blogs, result.data.data] }));
         return { status: true, data: result.data.data };

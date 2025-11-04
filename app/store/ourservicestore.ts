@@ -12,7 +12,7 @@ export const useOurServicesStore = create<Iproducts>((set) => ({
   productsdata: null,
   fetchProducts: async () => {
     try {
-      const response = await axiosInstance.get(process.env.NEXT_PUBLIC_API_SERVICE + '/products');
+      const response = await axiosInstance.get('/products');
       
       if (response?.status === 200 && response.data?.data) {
         set({ productsdata: response.data.data });
