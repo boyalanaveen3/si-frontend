@@ -12,7 +12,14 @@ instance.interceptors.request.use((config) => {
 
     // config.headers.accsign = localStorage.getItem("accsign")
     // config.headers.acchd = localStorage.getItem("acchd")
-    config.headers.Authorization = `${localStorage.getItem("token")}`
+const token = localStorage.getItem("token");
+if (token && token !== "null" && token !== "undefined") {
+  config.headers.Authorization = token.startsWith("Bearer ")
+    ? token
+    : `Bearer ${token}`;
+} else {
+  delete config.headers.Authorization; 
+}
     return config;
 }, (error) => {
     return Promise.reject(error);
