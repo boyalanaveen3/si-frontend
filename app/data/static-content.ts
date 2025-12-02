@@ -71,7 +71,7 @@ export const testimonialsDefaults: Testimonial[] = [
     name: 'Prince ',
     role: 'CMO, Lumina Tech',
     statement:
-      'NP Hub elevated our digital footprint within 8 weeks. We saw a 140% uplift in qualified leads and a refreshed brand narrative.'
+      'SuccessInsight elevated our digital footprint within 8 weeks. We saw a 140% uplift in qualified leads and a refreshed brand narrative.'
   },
   {
     id: 2,
@@ -162,7 +162,7 @@ export const valuesDefaults: CoreValue[] = [
 
 export const contactDefaults: ContactInfo = {
   phone: '+91 9493889736, 9100129823',
-  email: 'nphub@33gmail.com',
+  email: 'contact@successinsight.com',
   address: '1st Floor, Innovate Towers, Maddilapalem, Visakhapatnam, Andhra Pradesh, India',
   mapEmbedUrl:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.570905972839!2d83.31663077491918!3d17.738165283992405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943f6e0e39bef%3A0x29263db345ccfb52!2sPitapuram%20Colony%2C%20Maddilapalem%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1709271140000!5m2!1sen!2sin'
@@ -184,7 +184,7 @@ export const blogDefaults: BlogSummary[] = [
     title: 'Designing Web Experiences that Convert',
     slug: 'designing-web-experiences',
     summary: 'Create high-converting web experiences by aligning motion, UX flows, and storytelling.',
-    author: 'Np Hub Team',
+    author: 'SuccessInsight Team',
     createdAt: new Date().toISOString(),
     image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80'
   },
@@ -193,7 +193,7 @@ export const blogDefaults: BlogSummary[] = [
     title: 'Scaling Performance Marketing with Data',
     slug: 'scaling-performance-marketing',
     summary: 'Build experimentation loops and analytics foundations for compounding ROI.',
-    author: 'Np Hub Team',
+    author: 'SuccessInsight Team',
     createdAt: new Date().toISOString(),
     image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80'
   },
@@ -202,7 +202,7 @@ export const blogDefaults: BlogSummary[] = [
     title: 'Brand Systems for Ambitious Startups',
     slug: 'brand-systems-for-startups',
     summary: 'Why flexible brand systems help startups stay consistent across campaigns and products.',
-    author: 'Np Hub Team',
+    author: 'SuccessInsight Team',
     createdAt: new Date().toISOString(),
     image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80'
   }
@@ -250,6 +250,6 @@ export const faqDefaults: FaqItem[] = [
 export const serviceIntroDefaults = {
   title: 'Full-stack digital marketing & web design services built to scale with you',
   description:
-    'Np Hub delivers a cohesive ecosystem—from positioning and UI systems to acquisition, retention, and analytics.',
+    'SuccessInsight delivers a cohesive ecosystem—from positioning and UI systems to acquisition, retention, and analytics.',
   highlights: ['Cross-functional delivery teams', 'Experimentation-first mindset', 'Motion and performance baked in']
 };

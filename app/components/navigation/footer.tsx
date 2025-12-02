@@ -24,8 +24,8 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2">
-              <Image src="/logo-np.svg" alt="NP Hub logo" width={40} height={40} className="h-10 w-10" />
-              <span className="text-lg font-semibold text-primary">NP Hub</span>
+              <Image src="/successinsight-logo.png" alt="SuccessInsight Logo" width={40} height={40} className="h-10 w-10 object-contain" />
+              <span className="text-lg font-semibold text-primary">SuccessInsight</span>
             </div>
             <p className="mt-5 max-w-sm text-sm text-slate-600">
               We empower ambitious brands with performance-driven digital marketing and immersive web experiences.
@@ -64,7 +64,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-4 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} NP Hub Consultancy. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} SuccessInsight. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/privacy" className="transition hover:text-primary">
               Privacy Policy

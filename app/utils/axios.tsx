@@ -5,19 +5,11 @@ const instance = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
-  withCredentials: true,
 });
 
 instance.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem("token");
-    if (token && token !== "null" && token !== "undefined") {
-      config.headers.Authorization = token.startsWith("Bearer ")
-        ? token
-        : `Bearer ${token}`;
-    } else {
-      delete config.headers.Authorization;
-    }
+    // Remove authorization header for now since API doesn't require it
     return config;
   },
   (error) => Promise.reject(error)

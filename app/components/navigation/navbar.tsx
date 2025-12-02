@@ -31,14 +31,14 @@ export function Navbar() {
       <nav className="mx-auto flex h-[var(--navbar-height)] w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/logo-np.svg"
-            alt="NP Hub logo"
+            src="/successinsight-logo.png"
+            alt="SuccessInsight Logo"
             width={40}
             height={40}
-            className="h-10 w-10"
+            className="h-10 w-10 object-contain"
             priority
           />
-          <span className="text-lg font-semibold text-primary">NP Hub</span>
+          <span className="text-lg font-semibold text-primary">SuccessInsight</span>
         </Link>
 
         <div className="hidden items-center gap-10 md:flex">

@@ -35,7 +35,7 @@ export const useAboutUsStore = create<AboutUsState>((set) => ({
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Unable to load About Us content.';
       set({ loading: false, error: message });
-    }
+    } 
   }
 }));
 

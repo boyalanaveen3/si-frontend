@@ -12,7 +12,7 @@ export function Hero() {
   
   const heroContent = {
     headline: page?.title || 'Building digital experiences that convert.',
-    subheading: page?.meta?.seoDescription || 'Visionary Hub blends strategy, design, and marketing execution so your brand drives measurable growth.',
+    subheading: page?.meta?.seoDescription || 'SuccessInsight blends strategy, design, and marketing execution so your brand drives measurable growth.',
     ctaLabel: 'Request a Strategy Call',
     ctaHref: '/contact-us',
     highlights: ['Full-funnel marketing', 'Human-centered design', 'Growth-focused outcomes']
@@ -24,7 +24,7 @@ export function Hero() {
         <div className="max-w-2xl space-y-6">
           <Reveal>
             <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-              NP Hub
+              SuccessInsight
             </span>
           </Reveal>
           <Reveal delay={0.1}>
