@@ -97,26 +97,16 @@ export const teamDefaults: TeamMember[] = [
     avatar: 'https://drive.google.com/uc?export=view&id=1whI72qrUCuh62-QqDEUwQ20RRdu9u8SI',
     bio: 'Brand strategist with 12+ years crafting digital growth programs for high-velocity startups.',
     social: {
-      linkedin: 'https://www.linkedin.com/',
+      linkedin: 'https://www.linkedin.com/in/naveen-boyala-a96a29226?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWu1E7bdVTiC%2BhkN2exQOog%3D%3D://www.linkedin.com/',
       whatsapp: '9938629736'
     }
   },
-  // {
-  //   id: 2,
-  //   name: 'surendra jannu',
-  //   role: 'manager',
-  //   avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=640&q=80',
-  //   bio: 'Designs product ecosystems that blend motion, usability, and narrative for web-first brands.',
-  //   social: {
-  //     linkedin: 'https://www.linkedin.com/in/surendra-jannu-03bb2a242/'
-  //   }
-  // },
   {
     id: 3,
     name: 'Naveen boyala',
     role: 'CEO & Manager',
     avatar:
-      'https://drive.google.com/uc?export=view&id=1eG8SKSb37Lzebi_ja45UUuRsGE51wK5O ',
+      'https://drive.google.com/uc?export=view&id=1eG8SKSb37Lzebi_ja45UUuRsGE51wK5O',
     bio: 'Building scalable tech ecosystems that turn ideas into impact',
     social: {
       linkedin: 'https://www.linkedin.com/in/naveen-boyala-a96a29226?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BWu1E7bdVTiC%2BhkN2exQOog%3D%3D://www.linkedin.com/',
