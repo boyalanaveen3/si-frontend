@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useOurServicesStore } from '../../store/ourservicestore';
 import { Reveal } from '../animations/reveal';
 
@@ -18,17 +19,35 @@ export function ServiceGrid() {
         </Reveal>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {productsdata?.map((service, index) => (
-            <Reveal key={service.id} delay={index * 0.05}>
-              <div className="card-hover h-full rounded-3xl border border-slate-200 bg-white p-6">
-                {service?.icon && 
-                  <img src={service?.icon} className='flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-2xl'  />
-                }
-                <h3 className="mt-6 text-lg font-semibold text-primary">{service.title}</h3>
-                <p className="mt-3 text-sm text-slate-600">{service.description}</p>
-              </div>
-            </Reveal>
-          ))}
+          {productsdata?.map((service, index) => {
+            const isImageIcon = typeof service?.icon === 'string' && service.icon.startsWith('http');
+            return (
+              <Reveal key={service.id ?? index} delay={index * 0.05}>
+                <div className="card-hover h-full rounded-3xl border border-slate-200 bg-white p-6">
+                  {service?.icon && (
+                    isImageIcon ? (
+                      <div className="relative h-12 w-12 overflow-hidden rounded-2xl bg-primary/10">
+                        <Image
+                          src={service.icon}
+                          alt={`${service.title} icon`}
+                          fill
+                          unoptimized
+                          sizes="48px"
+                          className="object-contain"
+                        />
+                      </div>
+                    ) : (
+                      <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-2xl" aria-label={`${service.title} icon`}>
+                        {service.icon}
+                      </span>
+                    )
+                  )}
+                  <h3 className="mt-6 text-lg font-semibold text-primary">{service.title}</h3>
+                  <p className="mt-3 text-sm text-slate-600">{service.description}</p>
+                </div>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

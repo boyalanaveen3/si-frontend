@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal } from '../../components/animations/reveal';
 import { useBlogStore } from "../../store/blogstore"
@@ -61,13 +62,16 @@ export default function BlogPage() {
                   >
                     {/* IMAGE */}
                     <div className="relative h-48 w-full overflow-hidden">
-                      <img
+                      <Image
                         src={blog?.image}
-                        alt={blog?.title}
+                        alt={blog?.title ?? 'Blog cover image'}
+                        unoptimized
+                        fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw,
                      (max-width: 1024px) 50vw,
-                     33vw"                      />
+                     33vw"
+                      />
                     </div>
 
                     {/* CONTENT */}

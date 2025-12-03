@@ -64,7 +64,7 @@ export function Testimonials() {
                 exit="exit"
                 className="text-center text-lg leading-relaxed text-slate-600"
               >
-                "{activeTestimonial.statement}"
+                &ldquo;{activeTestimonial.statement}&rdquo;
               </motion.blockquote>
             </AnimatePresence>
 
