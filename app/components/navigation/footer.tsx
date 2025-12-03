@@ -24,7 +24,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-2">
-              <Image src="/successinsight-logo.png" alt="SuccessInsight Logo" width={40} height={40} className="h-10 w-10 object-contain" />
+              <Image src="/logo.png" alt="SuccessInsight Logo" width={40} height={40} className="h-10 w-10 object-contain rounded-full border border-slate-400" />
               <span className="text-lg font-semibold text-primary">SuccessInsight</span>
             </div>
             <p className="mt-5 max-w-sm text-sm text-slate-600">

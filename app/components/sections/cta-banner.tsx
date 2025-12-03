@@ -7,8 +7,8 @@ import { ctaDefaults } from '../../data/static-content';
 export function CtaBanner() {
   return (
     <section className="section-padding">
-      <div className="relative mx-auto w-full max-w-5xl overflow-hidden rounded-4xl border border-primary/10 bg-gradient-to-r from-primary to-blue-600 p-[1px] shadow-2xl">
-        <div className="relative rounded-[2rem] bg-white/95 px-8 py-16 sm:px-14">
+      <div className="relative mx-auto w-full max-w-5xl overflow-hidden">
+        <div className="relative rounded-[4rem] bg-white/95 px-8 py-16 sm:px-14 shadow-sm border border-slate-200">
           <div className="mx-auto max-w-2xl text-center">
             <motion.h2
               initial={{ opacity: 0, y: 18 }}
