@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-import { BlogSummary, PageResponse } from '../../types/content';
+import { BlogDetail, BlogSummary, PageResponse } from '../../types/content';
 import { useHomeStore } from '../../store/homestore';
 import { useAboutUsStore } from '../../store/aboutusstore';
 import { useOurServicesStore } from '../../store/ourservicestore';
@@ -55,7 +55,7 @@ interface BlogStoreHydratorProps {
   blogs?: BlogSummary[];
   detail?: {
     slug: string;
-    data: BlogSummary;
+    data: BlogDetail['data'];
   };
 }
 

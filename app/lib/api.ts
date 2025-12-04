@@ -1,5 +1,6 @@
 import { cache } from 'react';
 import { BlogDetail, BlogListResponse, PageResponse } from '../types/content';
+import { blogDefaults } from '../data/static-content';
 
 const API_BASE = process.env.NEXT_PUBLIC_API_SERVICE ?? 'http://localhost:4000/api';
 
@@ -56,11 +57,47 @@ export const getPageBySlug = cache(async (slug: string) => {
 });
 
 export const getBlogs = cache(async () => {
-  return apiGet<BlogListResponse>('/blogs');
+  try {
+    return await apiGet<BlogListResponse>('/blogs');
+  } catch (error) {
+    console.warn('getBlogs: falling back to static data', error);
+    return {
+      status: 200,
+      data: blogDefaults
+    } satisfies BlogListResponse;
+  }
 });
 
 export const getBlogBySlug = cache(async (slug: string) => {
-  return apiGet<BlogDetail>(`/blogs/${slug}`);
+  try {
+    return await apiGet<BlogDetail>(`/blogs/${slug}`);
+  } catch (error) {
+    const fallback = blogDefaults.find((blog) => blog.slug === slug);
+
+    if (!fallback) {
+      console.warn(`getBlogBySlug: no fallback found for slug "${slug}"`);
+      throw error instanceof Error ? error : new Error('Unable to fetch blog');
+    }
+
+    console.warn(`getBlogBySlug: using static fallback for slug "${slug}"`, error);
+
+    return {
+      status: 200,
+      data: {
+        _id: fallback._id,
+        title: fallback.title,
+        slug: fallback.slug,
+        summary: fallback.summary,
+        content: fallback.summary,
+        author: fallback.author,
+        published: true,
+        bid: fallback._id,
+        image: fallback.image,
+        createdAt: fallback.createdAt,
+        updatedAt: fallback.createdAt
+      }
+    } satisfies BlogDetail;
+  }
 });
 
 export function submitContact(payload: {
