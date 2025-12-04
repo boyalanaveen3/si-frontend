@@ -12,7 +12,7 @@ const quickLinks = [
 
 const socials = [
   { icon: FaLinkedinIn, href: 'https://www.linkedin.com' },
-//  { icon: FaFacebookF, href: 'https://www.facebook.com' },
+  { icon: FaFacebookF, href: 'https://www.facebook.com/share/1HLPsdkafa/' },
   { icon: FaInstagram, href: 'https://www.instagram.com/invites/contact/?igsh=121h0ipjmudbj&utm_content=1089y04x' }
 ];
 
