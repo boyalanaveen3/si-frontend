@@ -152,7 +152,7 @@ export const valuesDefaults: CoreValue[] = [
 
 export const contactDefaults: ContactInfo = {
   phone: '+91 9493889736, 9100129823',
-  email: 'contact@successinsight.com',
+  email: 'successinsight26@gmail.com',
   address: '1st Floor, Innovate Towers, Maddilapalem, Visakhapatnam, Andhra Pradesh, India',
   mapEmbedUrl:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.570905972839!2d83.31663077491918!3d17.738165283992405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943f6e0e39bef%3A0x29263db345ccfb52!2sPitapuram%20Colony%2C%20Maddilapalem%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1709271140000!5m2!1sen!2sin'

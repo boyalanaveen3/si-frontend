@@ -12,9 +12,8 @@ const quickLinks = [
 
 const socials = [
   { icon: FaLinkedinIn, href: 'https://www.linkedin.com' },
-  { icon: FaTwitter, href: 'https://twitter.com' },
-  { icon: FaFacebookF, href: 'https://www.facebook.com' },
-  { icon: FaInstagram, href: 'https://www.instagram.com' }
+//  { icon: FaFacebookF, href: 'https://www.facebook.com' },
+  { icon: FaInstagram, href: 'https://www.instagram.com/invites/contact/?igsh=121h0ipjmudbj&utm_content=1089y04x' }
 ];
 
 export function Footer() {
