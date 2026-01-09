@@ -60,9 +60,9 @@ export function ContactUsClient() {
       </section>
 
       <section className="section-padding bg-white">
-        <div className="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-[3fr,2fr]">
+        <div className="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-[3fr,2fr] lg:items-start">
           <Reveal>
-            <div className="space-y-6">
+            <div className="flex h-full flex-col space-y-6">
               <h2 className="section-title">Built for ambitious marketing &amp; product teams</h2>
               <p className="text-sm text-slate-600">
                 Visionary Hub pairs strategy with execution. We orchestrate growth programs that join brand, product, and performance marketing so every touchpoint moves your metrics forward.
@@ -92,7 +92,7 @@ export function ContactUsClient() {
                   </div>
                 ))}
               </div>
-              <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-primary">Visit our studio</h3>
                 <p className="mt-2 text-sm text-slate-600">{contact.address}</p>
                 <div className="mt-4 overflow-hidden rounded-2xl border border-slate-100 shadow-sm">
@@ -109,8 +109,16 @@ export function ContactUsClient() {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="space-y-6 rounded-3xl border border-slate-200 bg-white p-8 shadow-lg">
+            <div className="flex h-full flex-col">
+              <div className="flex-1 space-y-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-lg">
               <h3 className="text-xl font-semibold text-primary">What happens after you submit</h3>
+              <div className="overflow-hidden rounded-2xl">
+                <img 
+                  src="./meeting.png" 
+                  alt="Process workflow illustration" 
+                  className="h-64 w-full object-cover"
+                />
+              </div>
               <ol className="space-y-4 text-sm text-slate-600">
                 <li>
                   <span className="font-semibold text-primary">1. Intake review</span> — We assess your goals, operational context, and KPIs.
@@ -130,6 +138,7 @@ export function ContactUsClient() {
               </div>
               <div className="rounded-2xl border border-primary/20 bg-primary/5 p-4 text-xs text-primary">
                 Prefer immediate assistance? Email <Link href={`mailto:${contact.email}`} className="font-semibold">{contact.email}</Link> or call <Link href={`tel:${contact.phone}`} className="font-semibold">{contact.phone}</Link>.
+              </div>
               </div>
             </div>
           </Reveal>

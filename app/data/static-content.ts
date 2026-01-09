@@ -2,7 +2,6 @@ import {
   Service,
   Testimonial,
   TeamMember,
-  HeroContent,
   MetricsHighlight,
   BlogSummary,
   AboutSection,
@@ -15,7 +14,7 @@ import {
 
 // Minimal fallback data for production readiness - these will be replaced by API data
 export const metricsDefaults: MetricsHighlight[] = [
-  { id: 1, label: 'Projects Delivered', value: '250+' },
+  { id: 1, label: 'Projects Delivered', value: '10+' },
   { id: 2, label: 'Avg. ROI Increase', value: '3.2x' },
   { id: 3, label: 'Retention Rate', value: '92%' }
 ];
@@ -69,21 +68,21 @@ export const testimonialsDefaults: Testimonial[] = [
   {
     id: 1,
     name: 'Prince ',
-    role: 'CMO, Lumina Tech',
+    role: 'team lead, maren solutions',
     statement:
       'SuccessInsight elevated our digital footprint within 8 weeks. We saw a 140% uplift in qualified leads and a refreshed brand narrative.'
   },
   {
     id: 2,
     name: 'Pradeep chandu',
-    role: 'Founder, Apex Logistics',
+    role: 'Senior Executive, Tech Solutions',
     statement:
       'Their design direction and performance marketing support helped us launch a new product line with remarkable adoption.'
   },
   {
     id: 3,
     name: 'Raju bevara',
-    role: 'Director, Nova Clinics',
+    role: 'Senior Manager, Tech Solutions',
     statement:
       'From strategy workshops to execution, the team delivered an experience that made our patients trust us before they ever visited.'
   }
